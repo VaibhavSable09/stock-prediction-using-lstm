@@ -125,8 +125,6 @@ valid_df = pd.DataFrame({
 })
 
 
-# ... Existing code ...
-
 # Step 12: Visualize Predictions
 plt.figure(figsize=(16, 8))
 plt.title('Model Evaluation')
@@ -142,12 +140,7 @@ plt.plot(valid_df['Predictions'], label='Predictions', color='orange')
 plt.legend()
 plt.show()
 
-
-
-
-
-
-# Additional Cell 2: Scatter Plot of Actual vs. Predicted Values
+# Scatter Plot 
 plt.figure(figsize=(10, 8))
 plt.title('Scatter Plot of Actual vs. Predicted Values')
 plt.scatter(valid_df['Actual'], valid_df['Predictions'], color='purple', alpha=0.7)
@@ -155,7 +148,7 @@ plt.xlabel('Actual Close Price USD ($)')
 plt.ylabel('Predicted Close Price USD ($)')
 plt.show()
 
-# Additional Cell 1: Histogram of Actual and Predicted Values
+#  Histogram of Actual and Predicted Values
 plt.figure(figsize=(12, 6))
 plt.title('Histogram of Actual and Predicted Values')
 plt.hist(valid_df['Actual'], bins=30, alpha=0.5, label='Actual', color='blue')
@@ -164,6 +157,3 @@ plt.xlabel('Close Price USD ($)')
 plt.ylabel('Frequency')
 plt.legend()
 plt.show()
-
-
-
